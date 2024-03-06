@@ -2,20 +2,20 @@ package com.example.aliyasstream;
 
 public class Blog {
         String title;
-        String author;
+        int image;
         String date;
         String description;
-        int image;
+
 
         public Blog() {
         }
 
-        public Blog(String title, String author, String date, String description, int image) {
+        public Blog(String title, int image, String date, String description) {
             this.title = title;
-            this.author = author;
+            this.image = image;
             this.date = date;
             this.description = description;
-            this.image = image;
+
         }
 
         public String getTitle() {
@@ -26,13 +26,7 @@ public class Blog {
             this.title = title;
         }
 
-        public String getAuthor() {
-            return author;
-        }
 
-        public void setAuthor(String author) {
-            this.author = author;
-        }
 
         public String getDate() {
             return date;

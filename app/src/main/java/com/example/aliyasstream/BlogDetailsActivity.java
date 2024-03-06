@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class BlogDetailsActivity extends AppCompatActivity {
 
     TextView title;
-    TextView author;
     TextView date;
     TextView details;
     ImageView image;
@@ -23,7 +22,6 @@ public class BlogDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_blog_details);
 
         title=findViewById(R.id.title);
-        author=findViewById(R.id.author);
         date=findViewById(R.id.date);
         details=findViewById(R.id.details);
         image=findViewById(R.id.image);
@@ -31,12 +29,10 @@ public class BlogDetailsActivity extends AppCompatActivity {
         blog=new Gson().fromJson(getIntent().getStringExtra("data"),Blog.class);
 
         title.setText(blog.getTitle());
-        author.setText(blog.getAuthor());
         date.setText(blog.getDate());
         details.setText(blog.getDescription());
         image.setImageResource(blog.getImage());
 
-        author.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG);
     }
 }
 

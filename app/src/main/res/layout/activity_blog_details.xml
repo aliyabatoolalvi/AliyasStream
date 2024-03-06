@@ -1,43 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".BlogDetailsActivity">
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Image Title"
-        app:layout_constraintBottom_toTopOf="@+id/image"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.167"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.573" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="12/12/23"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image"
-        app:layout_constraintVertical_bias="0.432" />
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="293dp"
-        android:layout_height="530dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image1" />
+        android:layout_width="210dp"
+        android:layout_height="176dp"
+        android:adjustViewBounds="false"
+        android:rotation="90"
+        android:src="@drawable/image1" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/playfair"
+        android:gravity="center"
+        android:text="Close-up image of bark of tree"
+        android:textColor="@color/text"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/date"
+        android:text="Mar 6, 2024" />
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center"
+        android:text="In the close-up view of a tree's bark, a microcosm of nature unfolds. The rough surface, etched with lines and grooves, whispers tales of time and weathering. Earthy browns and mossy greens create a subtle palette, showcasing the tree's resilience in the face of seasons.
+    Zooming in reveals a world of intricate details – tiny ecosystems in crevices, the subtle play of light and shadow, and the delicate touch of lichens. This snapshot captures the essence of a tree's journey, highlighting the strength and endurance found even in the smallest fragments of the natural tapestry.
+"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text"
+        android:textSize="20sp" />
+
+</LinearLayout>
+
+
