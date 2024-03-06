@@ -12,7 +12,7 @@ public class BlogViewHolder extends RecyclerView.ViewHolder {
     ImageView image;
     TextView title;
     TextView date;
-    LinearLayout post;
+    androidx.constraintlayout.widget.ConstraintLayout post;
     public BlogViewHolder(@NonNull View itemView) {
         super(itemView);
         image=itemView.findViewById(R.id.image);

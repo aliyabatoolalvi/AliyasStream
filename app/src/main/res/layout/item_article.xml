@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".BlogDetailsActivity">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/post"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -52,7 +52,7 @@
             android:fontFamily="@font/playfair"
 
             />
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
