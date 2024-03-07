@@ -6,10 +6,6 @@ public class Blog {
         String date;
         String description;
 
-
-        public Blog() {
-        }
-
         public Blog(String title, int image, String date, String description) {
             this.title = title;
             this.image = image;

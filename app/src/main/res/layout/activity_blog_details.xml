@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center"
-    android:orientation="vertical">
-
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar"
+        >
 
     <ImageView
         android:id="@+id/image"
@@ -38,17 +53,20 @@
 
     <TextView
         android:id="@+id/details"
-        android:layout_width="391dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
-        android:gravity="center"
+        android:layout_marginHorizontal="35dp"
+        android:textAlignment="textStart"
+        android:gravity="start"
         android:text="In the close-up view of a tree's bark, a microcosm of nature unfolds. The rough surface, etched with lines and grooves, whispers tales of time and weathering. Earthy browns and mossy greens create a subtle palette, showcasing the tree's resilience in the face of seasons.
     Zooming in reveals a world of intricate details – tiny ecosystems in crevices, the subtle play of light and shadow, and the delicate touch of lichens. This snapshot captures the essence of a tree's journey, highlighting the strength and endurance found even in the smallest fragments of the natural tapestry.
 "
         android:layout_marginTop="10dp"
         android:textColor="@color/text"
         android:textSize="20sp" />
-
 </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
 
 
