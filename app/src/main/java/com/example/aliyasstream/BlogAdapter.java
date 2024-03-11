@@ -23,14 +23,11 @@ public class BlogAdapter extends RecyclerView.Adapter<BlogViewHolder>{
         this.data = data;
     }
 
-
-
     @NonNull
     public BlogViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(context).inflate(R.layout.item_article,parent,false);
         return new BlogViewHolder(view);
     }
-
 
     public void onBindViewHolder(@NonNull BlogViewHolder holder, int position) {
         Blog blog=data.get(position);
