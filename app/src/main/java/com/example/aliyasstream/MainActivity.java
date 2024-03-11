@@ -21,15 +21,16 @@ public class MainActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
 
-            data=getArticlesData();
+            data=getBlogsData();
             adapter=new BlogAdapter(this,data);
             recyclerView=findViewById(R.id.recyclerView);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
             recyclerView.setAdapter(adapter);
 
         }
 
-        private List<Blog> getArticlesData() {
+        private List<Blog> getBlogsData() {
             List<Blog> blogs=new ArrayList<>();
             Blog blog=new Blog(
                     "Close-up of Nature's Canvas",

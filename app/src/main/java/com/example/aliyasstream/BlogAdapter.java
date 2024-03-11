@@ -45,6 +45,7 @@ public class BlogAdapter extends RecyclerView.Adapter<BlogViewHolder>{
     }
 
 
+
     public int getItemCount() {
         return data.size();
     }
