@@ -20,5 +20,4 @@ public class BlogViewHolder extends RecyclerView.ViewHolder {
         date=itemView.findViewById(R.id.date);
         post=itemView.findViewById(R.id.post);
     }
-
 }

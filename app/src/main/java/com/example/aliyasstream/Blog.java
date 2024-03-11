@@ -11,18 +11,14 @@ public class Blog {
             this.image = image;
             this.date = date;
             this.description = description;
-
         }
 
         public String getTitle() {
             return title;
         }
-
         public void setTitle(String title) {
             this.title = title;
         }
-
-
 
         public String getDate() {
             return date;

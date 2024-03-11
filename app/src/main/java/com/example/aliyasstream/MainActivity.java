@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
         BlogAdapter adapter;
         List<Blog> data;
+
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
