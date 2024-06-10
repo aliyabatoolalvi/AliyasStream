@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             recyclerView.setAdapter(adapter);
 
         }
-
+//manual entry of data
         private List<Blog> getBlogsData() {
             List<Blog> blogs=new ArrayList<>();
             Blog blog=new Blog(
